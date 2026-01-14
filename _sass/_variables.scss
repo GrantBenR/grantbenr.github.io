@@ -1,9 +1,7 @@
-$primary-color: #000000;
-
-//
-// FONT
-//
 $main-font: system-ui, sans-serif;
+//
+// COLORS
+//
 $font-color-1:#000000;
 $font-color-2:#1E395B;
 $font-color-3:#48329C;
@@ -18,7 +16,12 @@ $background-color-2: #F0F6FB;
 $highlight-color-1: #DAEFFB;
 
 $border-color-1: #A8BBDD;
+$border-color-2:#000000;
 
+$index-feed-color-2: #94cbff;
+$index-feed-color-3: #a3d3ff;
+$index-feed-color-4: #b5dbff;
+$index-feed-color-5: #cce6ff;
 //
 // BASE
 //
@@ -33,20 +36,18 @@ $font-size-mobile:12;
 //
 
 // INDEX - FEED
-$index-feed-img-width: 100%;
+$index-feed-img-width: 200px;
 $index-feed-img-height: 200px;
-$index-feed-width-padding: (100% - $index-feed-img-width) / 2;
-
-$index-feed-color-2: #94cbff;
-$index-feed-color-3: #a3d3ff;
-$index-feed-color-4: #b5dbff;
-$index-feed-color-5: #cce6ff;
+// $index-feed-width-padding: (100% - $index-feed-img-width) / 2;
 
 // INDEX - ABOUT
 $index-about-img-main-width: 100%;
 $index-about-img-main-height: 200px;
 $index-about-img-sub-width: 100%;
 $index-about-img-sub-height: 60px;
+
+$icon-height: 43px;
+$icon-width: 43px;
 
 $play-button-width: 60px;
 $play-button-height: 60px;
