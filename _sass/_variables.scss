@@ -1,2 +1,57 @@
 $primary-color: #000000;
+
+//
+// FONT
+//
 $main-font: system-ui, sans-serif;
+$font-color-1:#000000;
+$font-color-2:#1E395B;
+$font-color-3:#48329C;
+$font-color-4:#7F7F7F;
+
+$shadow-color-1:#888A8C;
+$shadow-color-2:#ABB8CA;
+
+$background-color-1: #E3EDF8;
+$background-color-2: #F0F6FB;
+
+$highlight-color-1: #DAEFFB;
+
+$border-color-1: #A8BBDD;
+
+//
+// BASE
+//
+$header-img-height:200px;
+$header-nav-height:80px;
+$header-height: $header-img-height + $header-nav-height;
+$font-size-desktop:12;
+$font-size-mobile:12;
+
+//
+// INDEX
+//
+
+// INDEX - FEED
+$index-feed-img-width: 100%;
+$index-feed-img-height: 200px;
+$index-feed-width-padding: (100% - $index-feed-img-width) / 2;
+
+$index-feed-color-2: #94cbff;
+$index-feed-color-3: #a3d3ff;
+$index-feed-color-4: #b5dbff;
+$index-feed-color-5: #cce6ff;
+
+// INDEX - ABOUT
+$index-about-img-main-width: 100%;
+$index-about-img-main-height: 200px;
+$index-about-img-sub-width: 100%;
+$index-about-img-sub-height: 60px;
+
+$play-button-width: 60px;
+$play-button-height: 60px;
+$skip-button-width: 64px;
+$skip-button-height: 34px;
+
+$button-panel-width: $play-button-width + (2 * $skip-button-width);
+$button-panel-height: $play-button-height;

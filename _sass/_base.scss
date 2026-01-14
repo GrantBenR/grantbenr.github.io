@@ -1,43 +1,155 @@
-body {
-    color: #000000;
+@import "variables";
+* {
+  box-sizing: border-box;
+  font-family:'Segoe UI', 'Sans Serif';
+  color: $font-color-1;
 }
-//
-// Nav Header
-//
 
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.highlight_text {
+    color: $font-color-2;
+    display: inline;
+}
+
+.button_panel {
+  width: $button-panel-width;
+  height: $button-panel-height;
+  display:flex;
+  justify-content: center;
+  background: $background-color-1;
+}
+.play_button {
+  width: $play-button-width;
+  height: $play-button-height;
+  background-image: url("/assets/images/buttons/play/play_default.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+.play_button:hover {
+  background-image: url("/assets/images/buttons/play/play_hover.png");
+}
+.left_skip {
+  width: $skip-button-width;
+  height: $button-panel-height;
+  background-image: url("/assets/images/buttons/skip/left_skip.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+}
+.left_skip:hover {
+  background-image: url("/assets/images/buttons/skip/left_skip_hover.png");
+}
+.right_skip {
+  width: $skip-button-width;
+  height: $button-panel-height;
+  background-image: url("/assets/images/buttons/skip/right_skip.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+}
+.right_skip:hover {
+  background-image: url("/assets/images/buttons/skip/right_skip_hover.png");
+}
+/* Header/logo Title */
 header {
-    position: fixed;
+  padding: 80px;
+  text-align: center;
+  background-image: url("/assets/images/header/caesar.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+nav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.nav_link {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.nav_link.right {
+  float: right;
+}
+
+/* Change color on hover */
+.nav_link:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+// 
+// FOOTER
+// 
+footer {
+  padding: 20px;
+  text-align: center;
+  background: $index-feed-color-3;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-github {
+    background: #000000;
+    color: white;
+}
+.fa-gitlab {
+    background: #fc4c00;
+    color: white;
+}
+
+
+
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
     width: 100%;
-    background-color: #FFF00F;
-    padding: 0px 0px 0px 0px;
+  }
 }
-.headericondiv {
-    width:20%;
-    float:left;
-}
-.headericon {
-    width:50%;
-}
-.navbar {
-    padding: 30px 0px 30px 0px;
-    margin: 100px 0px 100px 0px;
-    font-size: 20px;
-    overflow: hidden;
-    background-color: #0FF00F;
-    width:70%;
-    float: right
-}
-.navitem {
-    text-align: center;
-    width:25%;
-    display: block;
-    float:left;
-}
-.navlink {
-    text-decoration: none;
-    text-align: center;
-    color: #000000;
-}
-//
-// footer
-//

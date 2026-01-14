@@ -4,6 +4,105 @@
 @import "base";
 @import "variables";
 
-body {
-  color:red;
+//Feed
+.feed_item {
+    display:block;
+    border-style:solid;
+    border-width:1px;
+    border-color:#000000;
+    background-color:$background-color-1;
+    box-shadow: 5px 5px 5px 5px $shadow-color-1;
+}
+.feed_title_div {
+    padding: 2px;
+}
+.feed_title {
+    border-width: 0px 0px 2px 0px;
+    border-style:solid;
+    border-color:$shadow-color-2;
+    background-color:$background-color-2;
+}
+.index_feed_img_div {
+    // height: $index-feed-img-height;
+    padding-bottom:10px;
+    padding-top:10px;
+    background-color: $background-color-1;
+    display:flex;
+    justify-content: center;
+}
+.index_feed_img {
+    width: $index-feed-img-width;
+    height: $index-feed-img-height;
+    object-fit: cover;
+    object-position: center;
+}
+.feed_item_info {
+    display:flex;
+    justify-content: left;
+    color: $font-color-4;
+}
+.feed_item_info_link {
+    text-decoration: underline;
+}
+.feed_item_meta {
+    padding: 10px;
+    background-color: $background-color-1;
+    flex-grow:1;
+
+    border-width: 2px 1px 2px 1px;
+    border-style:solid;
+    border-color:$border-color-1;
+}
+.feed_item_meta:hover {
+    background-color: $highlight-color-1;
+}
+.feed_item_paragraph {
+    padding: 10px 10px 50px 10px;
+    background-color: $background-color-2;
+    flex-grow:1;
+
+    border-width: 2px 1px 2px 1px;
+    border-style:solid;
+    border-color:$border-color-1;
+}
+// About
+.index_about_img_main_div {
+    width: $index-about-img-main-width;
+    height: $index-about-img-main-height;
+}
+.index_about_img_main {
+    width: $index-about-img-main-width;
+    height: $index-about-img-main-height;
+}
+.index_about_img_sub_div {
+    width: $index-about-img-sub-width;
+    height: $index-about-img-sub-height;
+}
+.index_about_img_sub {
+    width: $index-about-img-sub-width;
+    height: $index-about-img-sub-height;
+}
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.about {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: $background-color-1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: $background-color-1;
+  padding: 20px;
 }
