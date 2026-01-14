@@ -124,7 +124,8 @@ footer {
   display:flex;
   width:100%;
   background: $background-color-1;
-
+  align-items: center;
+  justify-content: center;
   border-width: 5px 0px 0px 0px;
   border-style:ridge;
   border-color:$shadow-color-2;
