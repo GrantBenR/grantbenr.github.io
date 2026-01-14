@@ -56,14 +56,21 @@ body {
   background-image: url("/assets/images/buttons/skip/right_skip_hover.png");
 }
 /* Header/logo Title */
+.header_div {
+  background-color: $background-color-1;
+  border-style:ridge;
+  border-width: 5px;
+  border-color: $border-color-1;
+}
 header {
   padding: 80px;
   text-align: center;
-  background-image: url("/assets/images/header/caesar.jpg");
+  background-image: url("/assets/images/header/monado_graded.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
   color: white;
+  z-index: 100;
 }
 
 /* Increase the font size of the heading */
@@ -74,19 +81,31 @@ header h1 {
 /* Style the top navigation bar */
 nav {
   overflow: hidden;
-  background-color: #333;
+  background-color: $background-color-1;
+  padding: 0px 20px 0px 20px;
+
+  border-width: 0px 0px 2px 0px;
+  border-style:solid;
+  border-color:$shadow-color-2;
+  position:sticky;
+  top: 0; /* The nav will stick when it reaches 0px from the top of the viewport */
+  width: 100%;
+  z-index: 1000;
 }
 
 /* Style the navigation bar links */
 .nav_link {
   float: left;
-  display: block;
-  color: white;
+  display: flex;
+  align-items: center;
+  color: $font-color-1;
   text-align: center;
-  padding: 14px 20px;
+  padding: 15px 5px;
   text-decoration: none;
 }
-
+.nav_link_text {
+  padding: 0px 5px 0px 10px;
+}
 /* Right-aligned link */
 .nav_link.right {
   float: right;
@@ -94,8 +113,7 @@ nav {
 
 /* Change color on hover */
 .nav_link:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: $background-color-3;
 }
 
 // 
@@ -103,14 +121,31 @@ nav {
 // 
 footer {
   padding: 20px;
-  text-align: center;
-  background: $index-feed-color-3;
+  display:flex;
+  width:100%;
+  background: $background-color-1;
+
+  border-width: 5px 0px 0px 0px;
+  border-style:ridge;
+  border-color:$shadow-color-2;
 }
 
+.footer_links {
+  display:flex;
+  background-color: $background-color-4;
+}
+.social_link {
+  display:block;
+  text-align:center;
+  width:100%;
+  padding:20px;
+}
+.social_link_text {
+  color: $font-color-3;
+}
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 30px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
@@ -122,16 +157,20 @@ footer {
 }
 
 .fa-linkedin {
-  background: #007bb5;
-  color: white;
+  background: #FFFFFF;
+  color: #007bb5;
+}
+.fa-envelope {
+  background: #FFFFFF;
+  color: #046901;
 }
 .fa-github {
-    background: #000000;
-    color: white;
+    background: #FFFFFF;
+    color: #000000;
 }
 .fa-gitlab {
-    background: #fc4c00;
-    color: white;
+    background: #FFFFFF;
+    color: #fc4c00;
 }
 
 
