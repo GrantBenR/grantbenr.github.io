@@ -64,7 +64,9 @@ body {
 }
 header {
   padding: 80px;
-  text-align: center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
   background-image: url("/assets/images/header/monado_graded.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -72,9 +74,20 @@ header {
   color: white;
   z-index: 100;
 }
-
+.header_text {
+  display:block;
+}
+header p {
+  // background-color: $background-color-1;
+  background-color: rgba(0, 0, 0, 0.5); 
+  color:white;
+  border-radius: 5px;
+  width:fit-content;
+  padding: 10px;
+}
 /* Increase the font size of the heading */
 header h1 {
+  text-align:center;
   font-size: 40px;
 }
 
@@ -130,10 +143,21 @@ footer {
   border-style:ridge;
   border-color:$shadow-color-2;
 }
+.footer_div {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-color-1;
 
+  border-width: 5px;
+  border-style:ridge;
+  border-color:$shadow-color-2;
+  border-radius: 50px;
+
+  padding:0px 20px 0px 20px;
+}
 .footer_links {
   display:flex;
-  background-color: $background-color-4;
 }
 .social_link {
   display:block;
@@ -154,9 +178,13 @@ footer {
 }
 
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
+  box-shadow: 2px 2px 2px 2px $shadow-color-3;
 }
-
+.fa-handshake {
+  background: #FFFFFF;
+  color: #046901;
+}
 .fa-linkedin {
   background: #FFFFFF;
   color: #007bb5;
