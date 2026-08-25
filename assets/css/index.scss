@@ -4,6 +4,230 @@
 @import "base";
 @import "variables";
 
+* {
+  box-sizing: border-box;
+  font-family:'Segoe UI', 'Sans Serif';
+  color: $font-color-1;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.highlight_text {
+    color: $font-color-2;
+    display: inline;
+}
+
+.button_panel {
+  width: $button-panel-width;
+  height: $button-panel-height;
+  display:flex;
+  justify-content: center;
+  background: $background-color-1;
+}
+.play_button {
+  width: $play-button-width;
+  height: $play-button-height;
+  background-image: url("/assets/images/buttons/play/play_default.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+.play_button:hover {
+  background-image: url("/assets/images/buttons/play/play_hover.png");
+}
+.left_skip {
+  width: $skip-button-width;
+  height: $button-panel-height;
+  background-image: url("/assets/images/buttons/skip/left_skip.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+}
+.left_skip:hover {
+  background-image: url("/assets/images/buttons/skip/left_skip_hover.png");
+}
+.right_skip {
+  width: $skip-button-width;
+  height: $button-panel-height;
+  background-image: url("/assets/images/buttons/skip/right_skip.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:contain;
+}
+.right_skip:hover {
+  background-image: url("/assets/images/buttons/skip/right_skip_hover.png");
+}
+/* Header/logo Title */
+.header_div {
+  background-color: $background-color-1;
+  border-style:ridge;
+  border-width: 5px;
+  border-color: $border-color-1;
+}
+header {
+  padding: 80px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/assets/images/header/monado_graded.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  color: white;
+  z-index: 100;
+}
+.header_text {
+  display:block;
+}
+header p {
+  // background-color: $background-color-1;
+  background-color: rgba(0, 0, 0, 0.5); 
+  color:white;
+  border-radius: 5px;
+  width:fit-content;
+  padding: 10px;
+}
+/* Increase the font size of the heading */
+header h1 {
+  text-align:center;
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+nav {
+  overflow: hidden;
+  background-color: $background-color-1;
+  padding: 0px 20px 0px 20px;
+
+  border-width: 0px 0px 2px 0px;
+  border-style:solid;
+  border-color:$shadow-color-2;
+  position:sticky;
+  top: 0; /* The nav will stick when it reaches 0px from the top of the viewport */
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Style the navigation bar links */
+.nav_link {
+  float: left;
+  display: flex;
+  align-items: center;
+  color: $font-color-1;
+  text-align: center;
+  padding: 15px 5px;
+  text-decoration: none;
+}
+.nav_link_text {
+  padding: 0px 5px 0px 10px;
+}
+/* Right-aligned link */
+.nav_link.right {
+  float: right;
+}
+
+/* Change color on hover */
+.nav_link:hover {
+  background-color: $background-color-3;
+}
+
+// 
+// FOOTER
+// 
+footer {
+  padding: 20px;
+  display:flex;
+  width:100%;
+  background: $background-color-1;
+  align-items: center;
+  justify-content: center;
+  border-width: 5px 0px 0px 0px;
+  border-style:ridge;
+  border-color:$shadow-color-2;
+}
+.footer_div {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-color-1;
+
+  border-width: 5px;
+  border-style:ridge;
+  border-color:$shadow-color-2;
+  border-radius: 50px;
+
+  padding:0px 20px 0px 20px;
+}
+.footer_links {
+  display:flex;
+}
+.social_link {
+  display:block;
+  text-align:center;
+  width:100%;
+  padding:20px;
+}
+.social_link_text {
+  color: $font-color-3;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  box-shadow: 2px 2px 2px 2px $shadow-color-3;
+}
+.fa-handshake {
+  background: #FFFFFF;
+  color: #046901;
+}
+.fa-linkedin {
+  background: #FFFFFF;
+  color: #007bb5;
+}
+.fa-envelope {
+  background: #FFFFFF;
+  color: #046901;
+}
+.fa-github {
+    background: #FFFFFF;
+    color: #000000;
+}
+.fa-gitlab {
+    background: #FFFFFF;
+    color: #fc4c00;
+}
+
+
+
+
+
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
 //Feed
 .feed_item {
     display:block;
@@ -13,14 +237,21 @@
     background-color:$background-color-1;
     box-shadow: 2px 2px 2px 2px $shadow-color-1;
 }
+.direction_arrows {
+    margin:0px;
+    padding:0px;
+}
 .feed_title_div {
-    padding: 2px;
+    margin:0px;
+    padding: 10px 2px 2px 2px;
 }
 .feed_title {
     border-width: 0px 0px 2px 0px;
     border-style:solid;
     border-color:$shadow-color-2;
     background-color:$background-color-2;
+    padding:0px 0px 0px 20px;
+    margin:0px;
 }
 .index_feed_img_div {
     padding: 20px 20px 20px 20px;
@@ -109,6 +340,10 @@
 .index_about_img_sub {
     width: $index-about-img-sub-width;
     height: $index-about-img-sub-height;
+}
+.feed_img_text {
+    display:block;
+    padding: 0px 20px 0px 20px;
 }
 /* Column container */
 .row {  
