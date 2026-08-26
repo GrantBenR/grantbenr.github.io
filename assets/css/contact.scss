@@ -7,17 +7,69 @@
 * {
   box-sizing: border-box;
   font-family: 'Consolas', 'Segoe UI', 'Sans Serif';
-  color: $font-color-5;
-  background-color: black;
+}
+body {
+  color: $contact-font-color-1;
+  background-image: url("/assets/images/contact/w10bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  margin: 0;
+  padding: 5px 10px 5px 10px;
+  height: 900px;
+}
+.full_terminal {
+  width:fit-content;
+}
+.main_terminal {
+  background-color: $contact-bg-color-1;
+  border-radius: 0 0 10px 10px;
+  padding: 20px 10px 20px 10px;
 }
 .contact_header {
-  color: $font-color-7;
+  color: $contact-font-color-3;
   display: inline;
 }
 .contact_div {
   display: block;
+  padding:10px 0 10px 0;
+}
+.contact_link {
+  color: $contact-font-color-1;
 }
 .userhost {
-  color: $font-color-6;
+  color: $contact-font-color-2;
   display: inline;
+}
+nav {
+  background-color: $contact-bg-color-2;
+  padding: 5px 0 0 0;
+  border-radius: 10px 10px 0 0;
+}
+.nav_link_div {
+  display: inline-block;
+  background-color: $contact-bg-color-2;
+  border-radius: 10px 10px 0 0;
+  padding: 5px 20px 5px 20px;
+}
+.nav_link_div_current {
+  display: inline-block;
+  background-color: $contact-bg-color-1;
+  border-radius: 10px 10px 0 0;
+  padding: 5px 20px 5px 20px;
+}
+.nav_link {
+  display:flex;
+  text-decoration: none;
+  color: $contact-font-color-1;
+  text-align: center;
+  justify-content: center
+}
+.nav_link img{
+  display: inline-block;
+}
+.nav_link_text {
+  padding: 0 5px 0 5px;
+  color: $contact-font-color-1;
+  display: inline
 }
