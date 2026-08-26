@@ -327,6 +327,7 @@ footer {
     padding: 20px 20px 20px 20px;
     background-color: $background-color-1;
     display:flex;
+    width: 100%;
     justify-content: left;
 }
 .index_about_img_main {
@@ -337,10 +338,13 @@ footer {
     border-width: 2px 2px 2px 2px;
     border-style:solid;
     border-color:$border-color-2;
+    width: 100%;
+    align-items: center;
 }
 .about_img_text {
     padding: 10px 0px 0px 10px;
     flex-grow:1;
+    width: 100%;
 }
 .index_about_img_sub_div {
     width: $index-about-img-sub-width;
@@ -349,6 +353,9 @@ footer {
 .index_about_img_sub {
     width: $index-about-img-sub-width;
     height: $index-about-img-sub-height;
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
 .feed_img_text {
     display:block;
