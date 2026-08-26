@@ -39,7 +39,16 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
+    color: $school-font-color-1;
+    background-image: url("/assets/images/school/ysvi_back3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width:100%;
+    height:70px;
+    padding:0px;
+    margin:0px;
+    font-size:20px;
+    text-decoration: underline;
     
 }
 .sections {
@@ -51,7 +60,17 @@ body {
 .school_section {
 }
 .school_section_header {
-
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: $school-font-color-1;
+    // background-image: url("/assets/images/school/ysvi_back3.png");
+    // background-repeat: no-repeat;
+    // background-position: center;
+    width:100%;
+    height:70px;
+    padding:0px;
+    margin:0px;
 }
 
 .class_title_div {
