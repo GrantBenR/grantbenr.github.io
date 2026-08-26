@@ -1,0 +1,23 @@
+---
+---
+
+@import "base";
+@import "variables";
+
+* {
+  box-sizing: border-box;
+  font-family: 'Consolas', 'Segoe UI', 'Sans Serif';
+  color: $font-color-5;
+  background-color: black;
+}
+.contact_header {
+  color: $font-color-7;
+  display: inline;
+}
+.contact_div {
+  display: block;
+}
+.userhost {
+  color: $font-color-6;
+  display: inline;
+}
