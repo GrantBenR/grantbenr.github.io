@@ -11,13 +11,24 @@
 }
 body {
   color: $contact-font-color-1;
+  margin: 0;
+  // padding: 5px 10px 5px 10px;
+  height: 900px;
+}
+main {
   background-image: url("/assets/images/contact/w10bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
-  margin: 0;
-  padding: 5px 10px 5px 10px;
   height: 900px;
+}
+footer img {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 .full_terminal {
   width:fit-content;
