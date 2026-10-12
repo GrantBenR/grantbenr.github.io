@@ -1,0 +1,75 @@
+---
+---
+
+@import "base";
+@import "variables";
+
+* {
+  box-sizing: border-box;
+  font-family:'Segoe UI', 'Sans Serif';
+  color: $font-color-1;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0 7px 0px 7px;
+    font-size: 20px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    // text-align: center;
+    background-color: $faith-bg-color-4;
+}
+
+.timeline_segment_div {
+    padding: 0 0 20px 0
+}
+
+.trip_section {
+    width: 70%;
+}
+.trip_header {
+    padding: 20px;
+    background-color: $faith-bg-color-3;
+    text-align: center;
+}
+
+.trip_subheader {
+    padding: 20px;
+    background-color: $faith-bg-color-1;
+}
+
+.timeline_header_div {
+    width: 100%;
+    text-align: left;
+    background-color: $faith-bg-color-2;
+    padding: 20px;
+
+}
+
+.timeline_div {
+    display: flex;
+    background-color: $faith-bg-color-1;
+}
+.timeline_text_div {
+    flex: 50%;
+    -ms-flex: 50%;
+    font-size: 20px;
+    padding:10px;
+}
+.timeline_image_div {
+    flex: 50%;
+    background-color: $faith-bg-color-3;
+}
+.timeline_photo {
+    width: 100%;
+}
+.timeline_image_footer_div {
+    text-align: center;
+    padding: 10px;
+}
