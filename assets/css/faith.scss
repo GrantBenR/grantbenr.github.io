@@ -354,25 +354,34 @@ main {
 
 @media (max-width: 900px) {
 
+    body {
+        font-size: 18px;
+    }
+
+    .trip_header {
+        padding: 5rem 1rem;
+    }
+
+    .trip_subheader {
+        margin: 2rem auto;
+        padding: 1.5rem;
+    }
+
+    .timeline_div,
+    .timeline_segment_div:nth-of-type(even) .timeline_div {
+        flex-direction: column;
+    }
+
+    .timeline_text_div {
+        max-width: 100%;
+    }
+
+    .timeline_photo {
+        max-height: 400px;
+        object-fit: cover;
+    }
+
     .timeline_container::before {
-        left: 20px;
-    }
-
-    .timeline_segment_div,
-    .timeline_segment_div:nth-child(even),
-    .timeline_segment_div:nth-child(odd) {
-        width: calc(100% - 60px);
-        margin-left: 60px;
-        margin-right: 0;
-    }
-
-    .timeline_segment_div::before {
-        left: -50px !important;
-        right: auto !important;
-    }
-
-    .timeline_segment_div::after {
-        left: -28px !important;
-        width: 28px;
+        left: 50%;
     }
 }
